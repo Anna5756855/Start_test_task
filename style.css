@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body {
+  background-color: #fbc5d5;
+  font-family: "Lobster", cursive;
+  text-transform: uppercase;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1600px;
+}
+.logo {
+  max-width: 500px;
+  margin-top: 45vh;
+  object-fit: cover;
+}
+.cloudAndTextElem {
+  position: relative;
+  margin-top: 20px;
+}
+.cloudElem {
+  max-width: 700px;
+}
+.cloudElemText {
+  max-width: 400px;
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  transition-property: opacity;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+  padding: 50px;
+  justify-content: center;
+}
+.buttonElem__blue,
+.buttonElem__pink {
+  max-width: 400px;
+  transition-property: opacity;
+  transition-delay: 0s;
+}
+.buttonElem {
+  position: relative;
+}
+.buttonText__pink {
+  font-size: 35px;
+  max-width: 350px;
+  position: absolute;
+  top: 22px;
+  left: 27px;
+  transition-delay: 0s;
+}
+.buttonText__blue {
+  font-size: 30px;
+  max-width: 400px;
+  position: absolute;
+  top: 7px;
+  left: 70px;
+  transition-delay: 0s;
+}
+
+@media screen and (max-width: 900px) {
+  .logo {
+    max-width: 350px;
+    margin-top: 45vh;
+  }
+  .cloudElem {
+    max-width: 500px;
+  }
+  .buttonElem__blue,
+  .buttonElem__pink {
+    max-width: 250px;
+  }
+  .cloudElemText {
+    max-width: 300px;
+    font-size: 30px;
+    top: 60px;
+    left: 100px;
+  }
+  .buttonText__pink {
+    font-size: 22px;
+    max-width: 350px;
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    transition-delay: 0s;
+  }
+  .buttonText__blue {
+    font-size: 20px;
+    max-width: 200px;
+    position: absolute;
+    top: 2px;
+    left: 40px;
+    transition-delay: 0s;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo {
+    max-width: 250px;
+    margin-top: 45vh;
+  }
+  .cloudElem {
+    max-width: 400px;
+  }
+  .buttonElem__blue,
+  .buttonElem__pink {
+    max-width: 200px;
+  }
+  .cloudElemText {
+    max-width: 260px;
+    font-size: 23px;
+    top: 50px;
+    left: 70px;
+  }
+  .buttonText__pink {
+    font-size: 18px;
+    max-width: 350px;
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    transition-delay: 0s;
+  }
+  .buttonText__blue {
+    font-size: 16px;
+    max-width: 200px;
+    position: absolute;
+    top: 2px;
+    left: 30px;
+    transition-delay: 0s;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo {
+    max-width: 220px;
+    margin-top: 45vh;
+  }
+  .cloudElem {
+    max-width: 350px;
+  }
+  .buttonElem__blue,
+  .buttonElem__pink {
+    max-width: 150px;
+  }
+  .cloudElemText {
+    max-width: 240px;
+    font-size: 21px;
+    top: 45px;
+    left: 60px;
+  }
+  .buttonText__pink {
+    font-size: 13px;
+    max-width: 350px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    transition-delay: 0s;
+  }
+  .buttonText__blue {
+    font-size: 12px;
+    max-width: 200px;
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    transition-delay: 0s;
+  }
+}
+
+/* JS classes */
+.animatedElems {
+  opacity: 0;
+}
+.visibility {
+  opacity: 1;
+}
